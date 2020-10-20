@@ -1,0 +1,15 @@
+
+
+.welcome h3,
+.articles h3 {
+	font-family: 'sora';
+	font-weight: 600;
+	letter-spacing: 2px;
+	line-height: 40px;
+}
+
+.articles h1 {
+	letter-spacing: 4px;
+	font-family: 'sora';
+	font-weight: 700;
+}
