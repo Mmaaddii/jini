@@ -1,15 +1,36 @@
+body {
+	padding-top: 110px;
+}
+
+
+
 
 
 .welcome h3,
 .articles h3 {
-	font-family: 'sora';
-	font-weight: 600;
+	font-family: font-family: 'Sora', sans-serif;
 	letter-spacing: 2px;
 	line-height: 40px;
 }
 
 .articles h1 {
 	letter-spacing: 4px;
-	font-family: 'sora';
-	font-weight: 700;
+	font-family: font-family: 'Sora', sans-serif;;
+}
+
+
+/*Start Media*/
+
+@media only  screen and (min-width: 992px) {
+
+	.welcome,
+	.article {
+		position: relative;
+	}
+
+	.welcome .btn-secondary,
+	.article .btn-success {
+		position: absolute;
+		bottom: 0px;
+	}
 }
