@@ -112,9 +112,13 @@
               <img src="img/www.png" class="img-fluid">
             </div>
           </div>
-          <div class="col-lg">
-            <h2 class="text-secondary mb-4">JOIN BTSien</h2>
+          <div class="col-lg pt-xl-5 pt-lg-4 pt-0">
+            <h2 class="text-secondary mb-4">Rejoignez les BTSiens</h2>
             <form method="POST" name="Propositions" netlify>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Votre Nom<span class="text-danger">(required)</span></label>
+                <input required name="name" type="text" class="form-control border-primary" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Mehdi Payloads">
+              </div>
               <div class="form-group">
                 <label for="exampleInputEmail1">Adress Email <span class="text-danger">(required)</span></label>
                 <input required name="email" type="email" class="form-control border-primary" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="secur1my@gmail.com">
@@ -125,7 +129,7 @@
               </div>
               <div class="form-group">
                 <label for="exampleInputEmail1">Votre Message <span class="text-success">(optional)</span></label>
-                <textarea name="message" type="text" class="form-control border-primary" placeholder="write me a message if you have one ..."></textarea>
+                <textarea name="message" type="text" class="form-control border-primary" placeholder="Write me your beloved message"></textarea>
                 <small id="emailHelp" class="form-text text-muted">Vos informations ne seront jamais partagés avec qui que ce soit.</small>
               </div>
               <button type="submit" class="btn btn-primary btn-lg btn-block"><i class="fas fa-paper-plane mr-3"></i>Join</button>
