@@ -2,22 +2,24 @@ body {
 	padding-top: 110px;
 }
 
-
-
-
-
-.welcome h3,
-.articles h3 {
-	font-family: font-family: 'Sora', sans-serif;
-	letter-spacing: 2px;
+h1,h2,h3 {
+	font-family: 'Sora', sans-serif;
+	font-weight: 600;
+	letter-spacing: 1.5px;
 	line-height: 40px;
 }
 
-.articles h1 {
-	letter-spacing: 4px;
-	font-family: font-family: 'Sora', sans-serif;;
+h1 {
+	font-size: 2.7rem;
 }
 
+.display-4 {
+	font-size: 2.7rem;
+}
+
+.articles h3 {
+	text-transform: uppercase;
+}
 
 /*Start Media*/
 
@@ -28,7 +30,7 @@ body {
 		position: relative;
 	}
 
-	.welcome .btn-secondary,
+	.welcome .btn-danger,
 	.article .btn-success {
 		position: absolute;
 		bottom: 0px;
