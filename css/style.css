@@ -35,4 +35,12 @@ h1 {
 		position: absolute;
 		bottom: 0px;
 	}
+	.navbar-expand-lg .navbar-nav .nav-link {
+	    padding-right: 1.5rem;
+	    padding-left: .5rem;
+	}
+}
+
+.btn {
+	text-align: left;
 }

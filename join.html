@@ -4,6 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -14,10 +16,10 @@
     <style type="text/css">
       
     </style>
+
+    <script src="https://kit.fontawesome.com/f02680d0c9.js" crossorigin="anonymous"></script>
   </head>
   <body>
-
-
 
     <!-- Start Navbar  -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
@@ -28,46 +30,45 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html#articles">Article</a>
+            <a class="nav-link" href="index.html#articles"><i class="fab fa-readme"></i> Articles</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              BTS Path
+              <i class="fas fa-code-branch"></i> BTS Path
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">La conception de produit industriel</a>
-              <a class="dropdown-item" href="#">Bureautique-Secrétariat</a>
-              <a class="dropdown-item" href="#">Maintenance électronique</a>
-              <a class="dropdown-item" href="#">Bâtiment</a>
-              <a class="dropdown-item" href="#">Comptabilité et Gestion</a>
-              <a class="dropdown-item" href="#">Productique</a>
-              <a class="dropdown-item" href="#">Électronique industrielle</a>
-              <a class="dropdown-item" href="#">Électromécanique</a>
+              <a class="dropdown-item disabled" href="#">La conception de produit industriel</a>
+              <a class="dropdown-item disabled" href="#">Developpement des systemes d'informations</a>
+              <a class="dropdown-item disabled" href="#">Multimedia et conception web</a>
+              <a class="dropdown-item disabled" href="#">Bureautique-Secrétariat</a>
+              <a class="dropdown-item disabled" href="#">Maintenance électronique</a>
+              <a class="dropdown-item disabled" href="#">Bâtiment</a>
+              <a class="dropdown-item disabled" href="#">Comptabilité et Gestion</a>
+              <a class="dropdown-item disabled" href="#">Productique</a>
+              <a class="dropdown-item disabled" href="#">Électronique industrielle</a>
+              <a class="dropdown-item disabled" href="#">Électromécanique</a>
             </div>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              BTS Documents
+             <i class="fas fa-file-word"></i> BTS Documents
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">La conception de produit industriel</a>
-              <a class="dropdown-item" href="#">Bureautique-Secrétariat</a>
-              <a class="dropdown-item" href="#">Maintenance électronique</a>
-              <a class="dropdown-item" href="#">Bâtiment</a>
-              <a class="dropdown-item" href="#">Comptabilité et Gestion</a>
-              <a class="dropdown-item" href="#">Productique</a>
-              <a class="dropdown-item" href="#">Électronique industrielle</a>
-              <a class="dropdown-item" href="#">Électromécanique</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">DSI</a>
+              <a class="dropdown-item disabled" href="#">La conception de produit industriel</a>
+              <a class="dropdown-item disabled" href="#">Developpement des systemes d'informations</a>
+              <a class="dropdown-item disabled" href="#">Multimedia et conception web</a>
+              <a class="dropdown-item disabled" href="#">Bureautique-Secrétariat</a>
+              <a class="dropdown-item disabled" href="#">Maintenance électronique</a>
+              <a class="dropdown-item disabled" href="#">Bâtiment</a>
+              <a class="dropdown-item disabled" href="#">Comptabilité et Gestion</a>
+              <a class="dropdown-item disabled" href="#">Productique</a>
+              <a class="dropdown-item disabled" href="#">Électronique industrielle</a>
+              <a class="dropdown-item disabled" href="#">Électromécanique</a>
             </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -78,12 +79,38 @@
     </nav>
     <!-- End Navbar -->
 
+
+    <!-- Start Modal -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">BTSien est en cours de développement</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            On vous demande pardon , le site web est en cours de développement. Veuillez patientez jusqu'au 26 Octobre 2020 et vous allez avoir les articles un par un par un.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="far fa-smile-beam mr-2"></i>C'est bon</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal -->
+
+
     <!-- Start Join Newsletter -->
     <section class="join py-5">
       <div class="container">
         <div class="row">
-          <div class="col-lg text-center mb-5 mb-lg-0 border p-2 rounded">
-            <img src="img/logoV1.png">
+          <div class="col-lg text-center mb-5 mb-lg-0">
+            <div class="border p-4 shadow-sm rounded">
+              <img src="img/www.png">
+            </div>
           </div>
           <div class="col-lg">
             <h2 class="text-secondary mb-4">JOIN BTSien</h2>
@@ -97,11 +124,11 @@
                 <input required placeholder="0630807614" name="numero" type="text" class="form-control border-primary" id="exampleInputEmail1">
               </div>
               <div class="form-group">
-                <label for="exampleInputEmail1">Votre Message <span class="text-success">(optionnal)</span></label>
+                <label for="exampleInputEmail1">Votre Message <span class="text-success">(optional)</span></label>
                 <textarea name="message" type="text" class="form-control border-primary" placeholder="write me a message if you have one ..."></textarea>
                 <small id="emailHelp" class="form-text text-muted">Vos informations ne seront jamais partagés avec qui que ce soit.</small>
               </div>
-              <button type="submit" class="btn btn-primary btn-lg btn-block">Join</button>
+              <button type="submit" class="btn btn-primary btn-lg btn-block"><i class="fas fa-paper-plane mr-3"></i>Join</button>
             </form>
           </div>
         </div>
@@ -130,5 +157,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
