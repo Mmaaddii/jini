@@ -27,3 +27,35 @@ danger.onclick = returnFalse();
 function returnFalse() {
 	return false;
 }
+
+
+// Start totop button
+
+var topButton = document.getElementById('toTop');
+
+// show topButton if height 2000
+
+
+	window.addEventListener("scroll", function() {
+		const scroller = document.querySelector('#toTop');
+		if (window.scrollY > 800) {
+			scroller.classList.remove("d-none");
+		}else {
+			scroller.classList.add("d-none");
+		}
+	});
+
+	// Go Top Function
+
+	function toTop() {
+		window.scrollTo({
+			top: 0, 
+	  		behavior: 'smooth'
+		});
+	}
+
+
+
+
+
+// End totop button

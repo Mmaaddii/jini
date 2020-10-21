@@ -3,7 +3,7 @@ body {
 }
 
 h1,h2,h3 {
-	font-family: 'Sora', sans-serif;
+	font-family: serif;
 	font-weight: 600;
 	letter-spacing: 1.5px;
 	line-height: 40px;
@@ -14,11 +14,11 @@ h1 {
 }
 
 .display-4 {
-	font-size: 2.7rem;
+    font-size: 2.4rem;
 }
 
 .articles h3 {
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 }
 
 /*Start Media*/
@@ -44,3 +44,27 @@ h1 {
 .btn {
 	text-align: left;
 }
+
+.modal-footer {
+	justify-content: flex-start;
+}
+
+/*Start to top button*/
+
+button.toTop {
+	position: fixed;
+	bottom: 0px;
+	right: 10px;
+	background-color: transparent;
+	border: none;
+	padding: 10px;
+	z-index: 9999;
+	color: grey;
+}
+button.toTop:hover {
+	color: #007bff;
+	border-color: #007bff;
+	outline-color: #007bff;
+}
+
+/*End to top button*/

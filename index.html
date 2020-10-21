@@ -8,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <title>Hello, world!</title>
@@ -18,303 +18,309 @@
 
     <script src="https://kit.fontawesome.com/f02680d0c9.js" crossorigin="anonymous"></script>
   </head>
-  <body>
+  <body class="">
+<!-- Start WRAPPER -->
+<div class="wrapper pl-sm-0 pr-3">
 
+  <button class="toTop d-none" id="toTop" onclick="toTop()">
+    <i class="fas fa-angle-up fa-2x"></i>
+  </button>
 
+  <!-- Start Navbar  -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="img/logoV3.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <!-- Start Navbar  -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#"><img src="img/logoV3.png"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#articles"><i class="fab fa-readme"></i> Articles</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-code-branch"></i> BTS Path
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item disabled" href="#">La conception de produit industriel</a>
-              <a class="dropdown-item disabled" href="#">Developpement des systemes d'informations</a>
-              <a class="dropdown-item disabled" href="#">Multimedia et conception web</a>
-              <a class="dropdown-item disabled" href="#">Bureautique-Secrétariat</a>
-              <a class="dropdown-item disabled" href="#">Maintenance électronique</a>
-              <a class="dropdown-item disabled" href="#">Bâtiment</a>
-              <a class="dropdown-item disabled" href="#">Comptabilité et Gestion</a>
-              <a class="dropdown-item disabled" href="#">Productique</a>
-              <a class="dropdown-item disabled" href="#">Électronique industrielle</a>
-              <a class="dropdown-item disabled" href="#">Électromécanique</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-             <i class="fas fa-file-word"></i> BTS Documents
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item disabled" href="#">La conception de produit industriel</a>
-              <a class="dropdown-item disabled" href="#">Developpement des systemes d'informations</a>
-              <a class="dropdown-item disabled" href="#">Multimedia et conception web</a>
-              <a class="dropdown-item disabled" href="#">Bureautique-Secrétariat</a>
-              <a class="dropdown-item disabled" href="#">Maintenance électronique</a>
-              <a class="dropdown-item disabled" href="#">Bâtiment</a>
-              <a class="dropdown-item disabled" href="#">Comptabilité et Gestion</a>
-              <a class="dropdown-item disabled" href="#">Productique</a>
-              <a class="dropdown-item disabled" href="#">Électronique industrielle</a>
-              <a class="dropdown-item disabled" href="#">Électromécanique</a>
-            </div>
-          </li>
-        </ul>
-        <!-- THis is a form not a div , just for cancelling send data-->
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button type="submit" class="btn btn-outline-success my-2 my-sm-0" type=""><i class="fas fa-search mr-2"></i>Search</button>
-        </form>
-        <!-- THis is a form not a div -->
-      </div>
-    </nav>
-    <!-- End Navbar -->
-
-    <!-- Start Modal -->
-
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">BTSien est en cours de développement</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#articles"><i class="fab fa-readme"></i> Articles</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-code-branch"></i> BTS Path
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item disabled" href="#">La conception de produit industriel</a>
+            <a class="dropdown-item disabled" href="#">Developpement des systemes d'informations</a>
+            <a class="dropdown-item disabled" href="#">Multimedia et conception web</a>
+            <a class="dropdown-item disabled" href="#">Bureautique-Secrétariat</a>
+            <a class="dropdown-item disabled" href="#">Maintenance électronique</a>
+            <a class="dropdown-item disabled" href="#">Bâtiment</a>
+            <a class="dropdown-item disabled" href="#">Comptabilité et Gestion</a>
+            <a class="dropdown-item disabled" href="#">Productique</a>
+            <a class="dropdown-item disabled" href="#">Électronique industrielle</a>
+            <a class="dropdown-item disabled" href="#">Électromécanique</a>
           </div>
-          <div class="modal-body">
-            On vous demande pardon , le site web est en cours de développement. Veuillez patientez jusqu'au 26 Octobre 2020 et vous allez avoir les articles un par un par un.
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           <i class="fas fa-file-word"></i> BTS Documents
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item disabled" href="#">La conception de produit industriel</a>
+            <a class="dropdown-item disabled" href="#">Developpement des systemes d'informations</a>
+            <a class="dropdown-item disabled" href="#">Multimedia et conception web</a>
+            <a class="dropdown-item disabled" href="#">Bureautique-Secrétariat</a>
+            <a class="dropdown-item disabled" href="#">Maintenance électronique</a>
+            <a class="dropdown-item disabled" href="#">Bâtiment</a>
+            <a class="dropdown-item disabled" href="#">Comptabilité et Gestion</a>
+            <a class="dropdown-item disabled" href="#">Productique</a>
+            <a class="dropdown-item disabled" href="#">Électronique industrielle</a>
+            <a class="dropdown-item disabled" href="#">Électromécanique</a>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="far fa-smile-beam mr-2"></i>C'est bon</button>
-          </div>
+        </li>
+      </ul>
+      <!-- THis is a form not a div , just for cancelling send data-->
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button type="submit" class="btn btn-outline-success my-2 my-sm-0" type=""><i class="fas fa-search mr-2"></i>Search</button>
+      </form>
+      <!-- THis is a form not a div -->
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+  <!-- Start Modal -->
+
+  <!-- Start Modal -->
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-bullhorn mr-3"></i>BTSien est en cours de développement</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          On vous demande pardon , le site web est en cours de développement. Veuillez patientez jusqu'au 26 Octobre 2020 et vous allez avoir les articles un par un par un.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-lg" data-dismiss="modal"><i class="fas fa-smile-beam mr-2"></i>C'est bon</button>
         </div>
       </div>
     </div>
-    <!-- End Modal -->
+  </div>
+  <!-- End Modal -->
 
-    <!-- Start copyrights -->
 
-    <div class="container">
-      <div class="alert alert-info alert-dismissible fade show p-4" role='alert'>
-        <h3>Give propositions</h3>
-        <p>
-          Hello there future BTSiens, this website is designed and developped by <a href="https://www.facebook.com/Jini.Payloads/" target="_blank">@JiniPayloads</a> and it's not completted yet. This is why I gentely invite you to give your propositions and join our newsletter by adding your email and phone number.
-        </p>
-        <hr>
-        <p>Articles will be added one by one from this Monday, 26th October. Till then , i wish you get the best from your journey.</p>
-        <a href="join.html" class="btn btn-primary btn-lg"><i class="fas fa-tasks mr-2"></i>Give a Prop</a>
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
+  <!-- Start copyrights -->
+
+  <div class="container">
+    <div class="alert alert-info alert-dismissible fade show p-4" role='alert'>
+      <h3>Give propositions</h3>
+      <p>
+        Hello there future BTSiens, this website is designed and developped by <a href="https://www.facebook.com/Jini.Payloads/" target="_blank">@JiniPayloads</a> and it's not completted yet. This is why I gentely invite you to give your propositions and join our newsletter by adding your email and phone number.
+      </p>
+      <hr>
+      <p>Articles will be added one by one from this Monday, 26th October. Till then , i wish you get the best from your journey.</p>
+      <a href="join.html" class="btn btn-primary btn-lg"><i class="fas fa-tasks mr-2"></i>Give a Prop</a>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
     </div>
+  </div>
 
-    <!-- End Copyrights -->
-    <!-- Start Welcome  -->
-    <section class="welcome py-4">
-      <div class="container">
+  <!-- End Copyrights -->
+  <!-- Start Welcome  -->
+  <section class="welcome py-4">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <img src="img/welcome.png" class="w-100 border rounded p-2">
+          </div>
+          <div class="col-lg-6">
+            <h3 class="text-danger display-4">SOYEZ LES BIENVENUE CHERS BTSIENS</h3>
+            <p class="lead">Je ne sais vraiment pas quelle langue on va utilisez dans  notre site, Français, anglais, ou arabe, mais sûrement pas cette dernière, car on connaît tous que <strong>le brevet de technicien supérieure</strong> est un diplôme technique inventé et développé par l'occident, ce qui nous a mis dans l'obligation de choisir entre le français et l’anglais.</p>
+            <p class="lead">Vue que le système éducatif Marocains est francophone, on va utiliser le français, mais trois fois, pensez a révisez les sources en anglais... PK? Tout simplement car plus de 80% de la documentation technique existante est souvent formulé á l'origine en anglais, et puis traduits en francais ou autre...</p>
+              <a href="#" class="btn btn-danger btn-lg btn-block"><i class="fas fa-external-link-alt mr-3"></i>Lire</a>
+          </div>
+        </div>
+    </div>
+  </section>
+  <!-- End Welcome -->
+  <div class="container">
+    <hr>
+  </div>
+
+  <!-- Start Articles -->
+  <section class="articles pt-3" id="articles">
+    <div class="container">
+      <!-- 1 -->
+        <h2 class="text-success display-4 mb-3">Mes articles <i class="fas fa-book float-right"></i></h2>
+        <div class="article py-4">
           <div class="row">
             <div class="col-lg-6 mb-4 mb-lg-0">
-              <img src="img/welcome.png" class="w-100 border rounded p-2">
+              <img src="img/art1.png" class="w-100 border rounded p-2">
             </div>
             <div class="col-lg-6">
-              <h3 class="text-danger display-4">SOYEZ LE BIENVENUE CHERS BTSIENS</h3>
-              <p class="lead">Je ne sais vraiment pas quelle langue on va utilisez dans  notre site, Français, anglais, ou arabe, mais sûrement pas cette dernière, car on connaît tous que <strong>le brevet de technicien supérieure</strong> est un diplôme technique inventé et développé par l'occident, ce qui nous a mis dans l'obligation de choisir entre le français et l’anglais.</p>
-              <p class="lead">Vue que le système éducatif Marocains est francophone, on va utiliser le français, mais trois fois, pensez a révisez les sources en anglais... PK? Tout simplement car plus de 80% de la documentation technique existante est souvent formulé á l'origine en anglais, et puis traduits en francais ou autre...</p>
-                <a href="#" class="btn btn-danger btn-lg btn-block"><i class="fab fa-facebook mr-3"></i>Lire</a>
+              <h3 class="text-secondary">Le projet de fin d'année</h3>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui .</p>
+                <a href="#" class="btn btn-success btn-lg btn-block"><i class="fas fa-external-link-alt mr-2"></i>Lire</a>
             </div>
           </div>
+        </div>
+        <!-- 2 -->
+        <hr>
+        <div class="article py-4">
+          <div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <img src="img/art2.png" class="w-100 border rounded p-2">
+            </div>
+            <div class="col-lg-6">
+              <h3 class="text-secondary">Le rapport de stage, Methodologie et consignes</h3>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui .</p>
+                <a href="#" class="btn btn-success btn-lg btn-block"><i class="fas fa-external-link-alt mr-2"></i>Lire</a>
+            </div>
+          </div>
+        </div>
+        <!-- 3 -->
+
+          <hr>
+        <div class="article py-4">
+          <div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <img src="img/art3.png" class="w-100 border rounded p-2">
+            </div>
+            <div class="col-lg-6">
+              <h3 class="text-secondary">Mon expérience en tant que ex-BTSien au centre Mohammed 6 de Marrakech</h3>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui .</p>
+                <a href="#" class="btn btn-success btn-lg btn-block"><i class="fas fa-external-link-alt mr-2"></i>Lire</a>
+            </div>
+          </div>
+        </div>
+        <!-- 4 -->
+        <hr>
+        <div class="article py-4">
+          <div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <img src="img/art4.png" class="w-100 border rounded p-2">
+            </div>
+            <div class="col-lg-6">
+              <h3 class="text-secondary">Comment faire pour Décrocher son brevet</h3>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui .</p>
+                <a href="#" class="btn btn-success btn-lg btn-block"><i class="fas fa-external-link-alt mr-2"></i>Lire</a>
+            </div>
+        </div>
       </div>
-    </section>
-    <!-- End Welcome -->
-    <div class="container">
-      <hr>
+        <!-- 4 -->
+        <hr>
+        <div class="article py-4">
+          <div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <img src="img/art5.png" class="w-100 border rounded p-2">
+            </div>
+            <div class="col-lg-6">
+              <h3 class="text-secondary"> Les profs, sont ils aussi compétents pour enseigner des matières aussi techniques que celles du BTS ?</h3>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui .</p>
+                <a href="#" class="btn btn-success btn-lg btn-block"><i class="fas fa-external-link-alt mr-2"></i>Lire</a>
+            </div>
+        </div>
+      </div>
+        <!-- 4 -->
+        <hr>
+        <div class="article py-4">
+          <div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <img src="img/art6.png" class="w-100 border rounded p-2">
+            </div>
+            <div class="col-lg-6">
+              <h3 class="text-secondary">5 raisons font du BTS une expérience éducationnelle réussite.</h3>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui .</p>
+                <a href="a" class="btn btn-success btn-lg btn-block"><i class="fas fa-external-link-alt mr-2"></i>Lire</a>
+            </div>
+        </div>
+      </div>
+        <!-- 4 -->
+        <hr>
+        <div class="article py-4">
+          <div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <img src="img/art7.png" class="w-100 border rounded p-2">
+            </div>
+            <div class="col-lg-6">
+              <h3 class="text-secondary">Est-il temps que j'investi dans moi-même par m’acheter une imprimante ?</h3>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui .</p>
+                <a href="#" class="btn btn-success btn-lg btn-block"><i class="fas fa-external-link-alt mr-2"></i>Lire</a>
+            </div>
+        </div>
+      </div>
+        <!-- 4 -->
+        <hr>
+        <div class="article py-4">
+          <div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <img src="img/art8.png" class="w-100 border rounded p-2">
+            </div>
+            <div class="col-lg-6">
+              <h3 class="text-secondary">Comment étudier les matières techniques efficacement, 3 méthodes expérimentées</h3>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui .</p>
+                <a href="#" class="btn btn-success btn-lg btn-block"><i class="fas fa-external-link-alt mr-2"></i>Lire</a>
+            </div>
+        </div>
+      </div>
     </div>
-
-    <!-- Start Articles -->
-    <section class="articles pt-3" id="articles">
-      <div class="container">
-        <!-- 1 -->
-          <h2 class="text-success display-4 mb-3">Mes articles <i class="fas fa-book float-right"></i></h2>
-          <div class="article py-4">
-            <div class="row">
-              <div class="col-lg-6 mb-4 mb-lg-0">
-                <img src="img/art1.png" class="w-100 border rounded p-2">
-              </div>
-              <div class="col-lg-6">
-                <h3 class="text-secondary">Le project de fin d'année</h3>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui .</p>
-                  <a href="#" class="btn btn-success btn-lg btn-block"><i class="fas fa-external-link-alt mr-2"></i>Lire</a>
-              </div>
-            </div>
-          </div>
-          <!-- 2 -->
-          <hr>
-          <div class="article py-4">
-            <div class="row">
-              <div class="col-lg-6 mb-4 mb-lg-0">
-                <img src="img/art2.png" class="w-100 border rounded p-2">
-              </div>
-              <div class="col-lg-6">
-                <h3 class="text-secondary">Le rapport de stage, Methodologie et consignes</h3>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui .</p>
-                  <a href="#" class="btn btn-success btn-lg btn-block"><i class="fas fa-external-link-alt mr-2"></i>Lire</a>
-              </div>
-            </div>
-          </div>
-          <!-- 3 -->
-
-            <hr>
-          <div class="article py-4">
-            <div class="row">
-              <div class="col-lg-6 mb-4 mb-lg-0">
-                <img src="img/art3.png" class="w-100 border rounded p-2">
-              </div>
-              <div class="col-lg-6">
-                <h3 class="text-secondary">Mon expérience en tant que BTSien au centre Mohammed 6 de Marrakech</h3>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui .</p>
-                  <a href="#" class="btn btn-success btn-lg btn-block"><i class="fas fa-external-link-alt mr-2"></i>Lire</a>
-              </div>
-            </div>
-          </div>
-          <!-- 4 -->
-          <hr>
-          <div class="article py-4">
-            <div class="row">
-              <div class="col-lg-6 mb-4 mb-lg-0">
-                <img src="img/art4.png" class="w-100 border rounded p-2">
-              </div>
-              <div class="col-lg-6">
-                <h3 class="text-secondary">Comment faire pour Décrocher son brevet</h3>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui .</p>
-                  <a href="#" class="btn btn-success btn-lg btn-block"><i class="fas fa-external-link-alt mr-2"></i>Lire</a>
-              </div>
-          </div>
-        </div>
-          <!-- 4 -->
-          <hr>
-          <div class="article py-4">
-            <div class="row">
-              <div class="col-lg-6 mb-4 mb-lg-0">
-                <img src="img/art5.png" class="w-100 border rounded p-2">
-              </div>
-              <div class="col-lg-6">
-                <h3 class="text-secondary"> Les profs, sont ils aussi compétents pour enseigner des matières aussi techniques que celles du BTS ?</h3>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui .</p>
-                  <a href="#" class="btn btn-success btn-lg btn-block"><i class="fas fa-external-link-alt mr-2"></i>Lire</a>
-              </div>
-          </div>
-        </div>
-          <!-- 4 -->
-          <hr>
-          <div class="article py-4">
-            <div class="row">
-              <div class="col-lg-6 mb-4 mb-lg-0">
-                <img src="img/art6.png" class="w-100 border rounded p-2">
-              </div>
-              <div class="col-lg-6">
-                <h3 class="text-secondary">5 raisons font du BTS une expérience éducationnelle réussite.</h3>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui .</p>
-                  <a href="a" class="btn btn-success btn-lg btn-block"><i class="fas fa-external-link-alt mr-2"></i>Lire</a>
-              </div>
-          </div>
-        </div>
-          <!-- 4 -->
-          <hr>
-          <div class="article py-4">
-            <div class="row">
-              <div class="col-lg-6 mb-4 mb-lg-0">
-                <img src="img/art7.png" class="w-100 border rounded p-2">
-              </div>
-              <div class="col-lg-6">
-                <h3 class="text-secondary">Est-il temps que j'investi dans moi-même par m’acheter une imprimante ?</h3>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui .</p>
-                  <a href="#" class="btn btn-success btn-lg btn-block"><i class="fas fa-external-link-alt mr-2"></i>Lire</a>
-              </div>
-          </div>
-        </div>
-          <!-- 4 -->
-          <hr>
-          <div class="article py-4">
-            <div class="row">
-              <div class="col-lg-6 mb-4 mb-lg-0">
-                <img src="img/art8.png" class="w-100 border rounded p-2">
-              </div>
-              <div class="col-lg-6">
-                <h3 class="text-secondary">Comment étudier les matières techniques efficacement, 3 méthodes expérimentées</h3>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui .</p>
-                  <a href="#" class="btn btn-success btn-lg btn-block"><i class="fas fa-external-link-alt mr-2"></i>Lire</a>
-              </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Articles -->
+  </section>
+  <!-- End Articles -->  
+</div>
+<!-- END WRAPPER -->
 
     <!-- Start Footer -->
-    <footer class="text-light bg-dark py-3">
+    <footer class="text-light bg-dark py-3 text-center">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4">
-            Jini Payloads for test
+          <div class="col-lg mb-3 mb-lg-0">
+            Website still under developpement, here is the link in <a href="https://github.com/Mmaaddii/jini.git" target="_blank">github.com</a>
           </div>
-          <div class="col-lg-4">
-            Jini Payloads for test
-          </div>
-          <div class="col-lg-4">
-            Jini Payloads for test
+          <div class="col-lg">
+            Created with <i class="fas fa-heart text-danger"></i> By <a href="https://www.facebook.com/Jini.Payloads/" target="_blank">@JINIPAYLOADS</a> in 2020
           </div>
         </div>
       </div>
